@@ -411,7 +411,9 @@ Vehical.maker = "Honda";
 Vehical.model = "2023";
 Vehical.name = " Civic";
 console.log(Vehical.carInfo());
+
 // ###############    Using_Object_Literals    ##################
+
 console.log(
   "// ###############    Using_Object_Literals    ##################"
 );
@@ -460,29 +462,31 @@ console.log(
   "// ###############    Singgleton_Class_Using_A_Function    ##################"
 );
 
-// let prof = new (function () {
-//   this.firstNmae = "Abdul Wahab";
-//   this.lastName = "Awan";
-//   this.number = "+92 321-9424-726";
-//   this.getProf = function () {
-//     return (
-//       "Frist Name:" +
-//       this.firstNmae +
-//       "\n" +
-//       "Last Name:" +
-//       this.lastName +
-//       "\n" +
-//       "Mobile:" +
-//       this.number
-//     );
-//   };
-// })();
-// console.log(prof.getProf());
+let prof = new (function () {
+  this.firstNmae = "Abdul Wahab";
+  this.lastName = "Awan";
+  this.number = "+92 321-9424-726";
+  this.getProf = function () {
+    return (
+      "Frist Name:" +
+      this.firstNmae +
+      "\n" +
+      "Last Name:" +
+      this.lastName +
+      "\n" +
+      "Mobile:" +
+      this.number
+    );
+  };
+})();
+console.log(prof.getProf());
 
-// prof.number = "+92 321-9424-726";
-// console.log(prof.getProf());
+prof.number = "+92 321-9424-726";
+prof.lastName = "Alvi";
+prof.number = "+92 321-9424-726";
+console.log(prof.getProf());
 
-let lime = new (function () {
+let fruit = new (function () {
   this.type = "Mexican lime";
   this.color = "green";
   this.getInformation = function () {
@@ -490,15 +494,16 @@ let lime = new (function () {
   };
 })();
 
-console.log(lime.getInformation());
+console.log(fruit.getInformation());
 
-lime.color = "yellow";
-console.log(lime.getInformation());
+fruit.color = "yellow";
+console.log(fruit.getInformation());
 console.log(
   "// A Singleton class is a design pattern that restrct a class to a single instance."
 );
 
 // ###############    End_Of_Singgleton_Class_Using_A_Function    ##################
+
 // ###############    End_Of_Functional_Classes   ##################
 
 // ###############    Static_Methods    ##################
